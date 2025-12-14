@@ -16,5 +16,10 @@ Deuxième fonction :
 
 <img width="1017" height="245" alt="image" src="https://github.com/user-attachments/assets/c5810aed-db38-4a82-ae8c-cc26a620d18f" />
 
+D'autre part, si l'on presse juste entrée, l'erreur est gérée :
+
+<img width="1002" height="231" alt="image" src="https://github.com/user-attachments/assets/f39f2215-fac4-49ff-9f7c-26cefd88b338" />
+
+
 
 

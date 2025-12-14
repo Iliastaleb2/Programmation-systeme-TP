@@ -2,9 +2,9 @@
 
 
 void Welcome_prompt(){
-    write (STDOUT_FILENO, "Bienvenue dans le noyau !", size_of_the_prompt);
+    write(STDOUT_FILENO, "Welcome to the shell !\n", size_of_welcome_prompt);
 }
 
 void Normal_prompt(){
-    write (STDOUT_FILENO, "ensea$ ", size_of_the_prompt);
+    write(STDOUT_FILENO, "enseaSH$\n", size_of_normal_prompt);
 }

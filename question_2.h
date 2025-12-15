@@ -7,4 +7,7 @@
 
 #define MAX_COMMAND_LENGTH 128
 
+#define Command_not_found_message "Command not found\n"
+#define size_of_command_not_found_message 18
+
 void Execution_of_a_simple_command(char *command);

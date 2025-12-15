@@ -19,6 +19,11 @@ void Execution_of_a_simple_command(char *command){
         exit(EXIT_FAILURE);
     }
 
+    // case of a non-existent command
+    if (pid > 0 && waitpid(pid, &status, WNOHANG) == -1) {
+        write(STDOUT_FILENO, Command_not_found_message, size_of_command_not_found_message);
+    }
+
     else {                       // case of the parent process
         waitpid(pid, &status, 0);    // waiting for the child process to finish
     }

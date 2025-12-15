@@ -1,5 +1,7 @@
 #include "question_2.h"
 
+int last_exit_status = 0; // Global variable to store the last exit status (in particular for question_4.c)
+
 void Execution_of_a_simple_command(char *command){
 
     // Contrary to the previous version, we do not check for empty commands here because in the main loop,
@@ -26,5 +28,6 @@ void Execution_of_a_simple_command(char *command){
 
     else {                       // case of the parent process
         waitpid(pid, &status, 0);    // waiting for the child process to finish
+        last_exit_status = status; // storing the exit status for question_4.c
     }
 }

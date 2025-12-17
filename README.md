@@ -60,6 +60,13 @@ L'objectif de cette 5ème fonction est de mesurer le temps d'exécution de la co
 
 <img width="1336" height="212" alt="image" src="https://github.com/user-attachments/assets/addb5d99-1763-467f-9c96-b996010c3e8d" />
 
+# Fonction 6
+
+Pour cette sixième fonction, on souhaite cette fois-ci exécuter une fonction complexe, nonobstant pour le moment, cette fonction ne fonctionne pas comme voulu
+
+<img width="1496" height="148" alt="image" src="https://github.com/user-attachments/assets/1ced2518-f35b-4563-ba71-dd701c171e4a" />
+
+
 
 
 

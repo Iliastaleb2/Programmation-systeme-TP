@@ -54,6 +54,11 @@ Voici
 
 <img width="1467" height="372" alt="image" src="https://github.com/user-attachments/assets/ec085140-cefc-4f63-a4a8-ab6ac6fd65fc" />
 
+# Fonction 5
+
+<img width="1335" height="157" alt="image" src="https://github.com/user-attachments/assets/850d2c72-4683-4533-8956-3af25f248985" />
+
+
 
 
 

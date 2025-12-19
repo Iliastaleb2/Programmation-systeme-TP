@@ -74,6 +74,10 @@ Pour finir ce TP, on cherche maintenant à gérer la redirection vers stdin et s
 
 <img width="1275" height="366" alt="image" src="https://github.com/user-attachments/assets/7ac40045-229f-40b8-8e46-a22c50e09692" />
 
+## Conclusion
+
+Au cours de ce TP, nous avons pu mettre en place un shell personalisé gérant un éventail correct de situation : des commandes simples, à des commandes plus complexes gérant des arguments et des redirections.
+
 
 
 

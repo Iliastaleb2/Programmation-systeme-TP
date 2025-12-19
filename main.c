@@ -5,7 +5,6 @@
 #include "question_5.h"
 #include "question_6.h"
 
-#define MAX_ARGUMENTS 10
 
 int main() {
     char command[MAX_COMMAND_LENGTH];

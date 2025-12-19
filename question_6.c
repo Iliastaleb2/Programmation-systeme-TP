@@ -1,28 +1,25 @@
 #include "question_6.h"
 
-extern int last_exit_status; // Declaration of the external variable to access the last exit status
 
-void Execution_of_a_command_with_arguments(char *command, char **arguments){
+void Execution_of_a_command_with_arguments(char *command, char **arguments) {
     
-    int status;
-    
-    pid_t pid = fork();                    // creating a new process in order to execute the command
-
-    if (pid == -1){                // managing fork error
-        perror("Fork failed");
-        exit(EXIT_FAILURE);
+    char *token;
+    int index = 0;
+    token = strtok(command, " \n"); // tokenizing the command string using space and newline as delimiters
+    while (token != NULL && index < MAX_ARGUMENTS - 1) {  
+        arguments[index] = token; // storing each argument in the arguments array
+        index++; // moving to the next argument
+        token = strtok(NULL, " \n"); // getting the next token
     }
-
-    if (pid == 0){               // case of the child process
-        execvp(command, arguments);    // executing the command with arguments
-        perror("Execution failed");
-        exit(EXIT_FAILURE);
-    }
-
-    // case of a non-existent command
-    else if (pid > 0){               // case of the parent process
-        waitpid(pid, &status, 0);      // waiting for the child process to finish
-    }
-    last_exit_status = status;
+    arguments[index] = NULL; // the last argument must be NULL for execvp
+    if (fork() == 0) {
+        // Child process
+        if (execvp(arguments[0], arguments) == -1) {
+            perror("Execution failed");
+        }
+        _exit(EXIT_FAILURE); // exit child process if exec fails
+    } else {
+        // parent process
+        wait(NULL); // waiting for child process to finish
+    }    
 }
-

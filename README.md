@@ -64,9 +64,9 @@ Dans cette optique, on veillera à convertir correctement le temps en ms et de l
 
 # Fonction 6
 
-Pour cette sixième fonction, on souhaite cette fois-ci exécuter une fonction complexe, nonobstant pour le moment, cette fonction ne fonctionne pas comme voulu
+Pour cette sixième fonction, on souhaite cette fois-ci exécuter une fonction complexe, maintenant cette fonction fonctionne comme voulu !
 
-<img width="1496" height="148" alt="image" src="https://github.com/user-attachments/assets/1ced2518-f35b-4563-ba71-dd701c171e4a" />
+<img width="1172" height="407" alt="image" src="https://github.com/user-attachments/assets/db3c0349-e880-4184-ae02-94d650e69a44" />
 
 
 

@@ -12,7 +12,8 @@ SRCS = main.c \
 	   question_3.c \
 	   question_4.c \
 	   question_5.c \
-	   question_6.c
+	   question_6.c \
+	   question_7.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -5,28 +5,19 @@
 #include "question_5.h"
 #include "question_6.h"
 #include "question_7.h"
+#include "question_8.h"
 
 
 int main() {
-    char command[MAX_COMMAND_LENGTH];
-    char *arguments[MAX_ARGUMENTS];
+    char command[BUFFER_SIZE]; // Buffer to hold user command input
+
     Welcome_prompt();
+    A_better_displayed_prompt();
 
     while (1) {
-        A_better_displayed_prompt();
         Exit_prompt_or_ctrl_d_prompt(command);
 
-        if (command[0] != '\0' && arguments[0] == NULL) {  // if command is not empty and arguments array is empty
-            Execution_time_command(command);
-        }
-        else if (strchr(command, '>') != NULL || strchr(command, '<') != NULL) { //we allow ourselves to use strchr here to check if there is a redirection symbol in the command
-            Managing_redirections_to_stdin_and_stdout_with_arrows(command, arguments);
-        }
-        else if (arguments[0] != NULL) {
-            Execution_of_a_command_with_arguments(command, arguments); 
-        }
-        else {
-            Execution_of_a_simple_command(command); // if we don't put this line, we won't be able to manage non existent commands 
-        }
+        Execution_time_command(command);  // this function now handles execution and timing so no need to call other execution functions here
     }
+
 }

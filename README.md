@@ -74,7 +74,7 @@ Par suite, on cherche maintenant à gérer la redirection vers stdin et stdout, 
 
 <img width="1275" height="366" alt="image" src="https://github.com/user-attachments/assets/7ac40045-229f-40b8-8e46-a22c50e09692" />
 
-#Fonction 8
+# Fonction 8
 
 On souhaite finalement conclure ce TP par la gestion du pipe, de là même manière strtok nous sera utile pour séparer en deux processus fils la commande en deux afin gérer les deux commandes du pipe.
 

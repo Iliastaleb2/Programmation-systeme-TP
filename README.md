@@ -70,9 +70,18 @@ Pour cette sixième fonction, on souhaite cette fois-ci exécuter une fonction c
 
 # Fonction 7
 
-Pour finir ce TP, on cherche maintenant à gérer la redirection vers stdin et stdout, j'ai donc opté pour la même stratégie que la question 6, c'est àa dire, l'usage de la fonction strtok ensuite on cherche dans la chaîne de caractère un ">" ou "<" (c'est pour cela qu'on s'est permis l'usage de strcmp) puis si on repère un ">" on créé ou ouvre le fichier avec les bonnes permissions et pour le "<", l'ouvrir en lecture seule suffit.
+Par suite, on cherche maintenant à gérer la redirection vers stdin et stdout, j'ai donc opté pour la même stratégie que la question 6, c'est àa dire, l'usage de la fonction strtok ensuite on cherche dans la chaîne de caractère un ">" ou "<" (c'est pour cela qu'on s'est permis l'usage de strcmp) puis si on repère un ">" on créé ou ouvre le fichier avec les bonnes permissions et pour le "<", l'ouvrir en lecture seule suffit.
 
 <img width="1275" height="366" alt="image" src="https://github.com/user-attachments/assets/7ac40045-229f-40b8-8e46-a22c50e09692" />
+
+#Fonction 8
+
+On souhaite finalement conclure ce TP par la gestion du pipe, de là même manière strtok nous sera utile pour séparer en deux processus fils la commande en deux afin gérer les deux commandes du pipe.
+
+Puis on test l'ensemble de nos fonctions pour voir si tout fonctionne encore comme voulu :
+
+<img width="1325" height="792" alt="image" src="https://github.com/user-attachments/assets/4987e70d-7383-4edf-b0f9-c6928f2c68cb" />
+
 
 ## Conclusion
 
